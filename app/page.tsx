@@ -1,4 +1,5 @@
 import { AboutMe } from "@/components/landing/AboutMeSection";
+import { FeaturedProjects } from "@/components/landing/FeaturedProjects";
 import { HeroSection } from "@/components/landing/HeroSection";
 import { Navbar } from "@/components/landing/Navbar";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <AboutMe />
+      <FeaturedProjects />
     </div>
   );
 }

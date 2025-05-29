@@ -79,11 +79,6 @@ export function AboutMe() {
       <div className="h-[400vh]">
         {/* Sticky Container */}
         <div className="sticky top-0 h-screen bg-gradient-to-br from-neutral-50 via-white to-neutral-100 overflow-hidden">
-          {/* Background Pattern */}
-          <div className="absolute inset-0 opacity-30">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(0,0,0,0.15)_1px,transparent_0)] bg-[size:20px_20px]" />
-          </div>
-
           <div className="relative h-full flex items-center justify-center">
             <div className="max-w-5xl mx-auto px-6">
               {/* Header - Always visible */}
