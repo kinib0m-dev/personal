@@ -3,10 +3,10 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Menu } from "lucide-react";
-import LogoIcon from "@/public/icons/logo-icon.svg";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { NavbarLinks } from "./NavbarLinks";
+import Image from "next/image";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -42,7 +42,13 @@ export function Navbar() {
     >
       {/* Logo */}
       <Link className="flex items-center gap-1" href={"/"}>
-        <LogoIcon className="size-10 transition-all duration-500 ease-in-out" />
+        <Image
+          src={"/icons/logo-icon.svg"}
+          alt="Logo"
+          width={40}
+          height={40}
+          className="size-10 transition-all duration-500 ease-in-out"
+        />
         <h1 className="text-sm md:text-lg tracking-tighter font-semibold text-neutral-900">
           Diego Garcia
         </h1>

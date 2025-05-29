@@ -10,8 +10,8 @@ import {
   Trophy,
   ChevronLeft,
   ChevronRight,
+  MessageSquare,
 } from "lucide-react";
-import MockTalkIcon from "@/public/icons/mocktalk.svg";
 
 export function FeaturedProjects() {
   const [currentProject, setCurrentProject] = useState(0);
@@ -25,7 +25,7 @@ export function FeaturedProjects() {
       tagline: "Practice interviews so you can focus on landing your dream job",
       description:
         "Practice for your next job interview with our AI-powered platform. Get personalized feedback and improve your interview skills.",
-      icon: <MockTalkIcon className="w-6 h-6" />,
+      icon: <MessageSquare className="w-6 h-6" />,
       color: "from-blue-600 to-indigo-700",
       bgColor: "bg-blue-50",
       link: "https://mocktalk.dev",
@@ -45,7 +45,7 @@ export function FeaturedProjects() {
       icon: <Zap className="w-6 h-6" />,
       color: "from-purple-600 to-pink-600",
       bgColor: "bg-purple-50",
-      techStack: ["Next.js", "LangChain", "Beehiiv API", "Web Scraping"],
+      techStack: ["Next.js", "LangChain", "RAG", "Web Scraping"],
       challenge: "Balancing automation with authentic brand voice",
     },
     {
@@ -150,34 +150,6 @@ export function FeaturedProjects() {
         {/* Main Project Display */}
         <div className="max-w-6xl mx-auto">
           <div className="relative">
-            {/* Background Animated Shapes */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <motion.div
-                animate={{
-                  rotate: [0, 360],
-                  scale: [1, 1.1, 1],
-                }}
-                transition={{
-                  duration: 20,
-                  repeat: Infinity,
-                  ease: "linear",
-                }}
-                className="absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-br from-neutral-200 to-neutral-300 rounded-full opacity-30"
-              />
-              <motion.div
-                animate={{
-                  rotate: [360, 0],
-                  scale: [1, 0.9, 1],
-                }}
-                transition={{
-                  duration: 15,
-                  repeat: Infinity,
-                  ease: "linear",
-                }}
-                className="absolute -bottom-10 -left-10 w-32 h-32 bg-gradient-to-br from-neutral-300 to-neutral-400 rounded-full opacity-20"
-              />
-            </div>
-
             {/* Project Cards Container */}
             <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden border border-neutral-200">
               <AnimatePresence mode="wait">
